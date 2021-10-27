@@ -1,0 +1,274 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+h1 {
+    text-align: center;
+    border: 2px solid #13374b;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-family: Copperplate;
+}
+
+#buttons {
+    text-align: center;
+}
+
+select {
+    background-color: #030E32;
+    color: rgb(195, 215, 236);
+    float: right;
+    width: 180px;
+    text-align: center;
+}
+
+#comptable {
+    list-style-type: none;
+    border-radius: 10px;
+    border: 2px solid #13374b;
+    list-style-position: inside;
+    padding: 5px;
+    background-color: #030E32;
+    margin: 20px;
+    color: rgb(195, 215, 236);
+
+}
+
+#os {
+    float: right;
+    text-align: right;
+}
+
+checkbox {
+    float: right;
+}
+
+#computer {
+    list-style-type: none;
+    border-radius: 10px;
+    border: 2px solid #13374b;
+    list-style-position: inside;
+    padding: 5px;
+    background-color: #030E32;
+    margin: 20px;
+}
+
+#computerCustomizer {
+    text-align: left;
+}
+
+hr {
+    border-radius: 25px;
+    display: block;
+    height: 2px;
+    border: 10px;
+    border-top: 5px solid #13374b;
+}
+
+h3 {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: "Lucida Console", monospace;
+}
+
+p {
+    text-align: center;
+}
+
+
+button {
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    color: rgb(192, 98, 236);
+    border: 2px solid #13374b;
+    display: block;
+    background-color: rgb(39, 12, 85);
+    font-size: 26px;
+    margin-top: 5px;
+}
+
+    button:hover {
+        transform: scale(1.1);
+    }
+
+body {
+    font-family: arial, sans-serif;
+    background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient( rgba(6, 0, 31, 0.93), rgba(1, 4, 31, 0.7));
+    color: rgb(195, 215, 236);
+}
+
+form {
+    text-align: center;
+}
+
+#submit {
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    color: rgb(192, 98, 236);
+    border: 2px solid #13374b;
+    display: block;
+    background-color: rgb(39, 12, 85);
+    font-size: 26px;
+    font-family: monospace;
+    margin-top: 5px;
+}
+
+#feedback {
+    width: 400px;
+    height: 160px;
+    text-align: start;
+    text-wrap: normal;
+    background-color: #030E32;
+    border-radius: 10px;
+    border: 2px solid #13374b;
+    color: rgb(195, 215, 236);
+}
+
+#email {
+    border-radius: 7px;
+    border: 2px solid #13374b;
+    color: rgb(195, 215, 236);
+    background-color: #030E32;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+}
+
+#navbar {
+    color: rgb(195, 215, 236);
+}
+
+.navlink:hover {
+    text-decoration: underline;
+    color: #0056b3 !important;
+}
+
+
+canvas {
+    border: 1px solid rgb(195, 215, 236);
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+#caption {
+    text-align: center;
+}
+
+.details {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.priceSelect {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: rgb(192, 98, 236);
+}
+
+ul li a {
+    border-radius: 10px;
+    border: 2px solid #13374b;
+    margin: 3px;
+}
+
+ul {
+    align-content: center;
+}
+
+    ul li a:hover {
+        color: #0056b3;
+        text-decoration: underline !important;
+    }
+
+.navbar a {
+    color: rgb(192, 98, 236);
+}
+
+.btn-primary {
+    color: rgb(195, 215, 236);
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-radius: 25px;
+    display: block;
+    height: 2px;
+    border: 10px;
+    border: 5px solid #13374b;
+    border-top: 0px !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}

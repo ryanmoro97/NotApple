@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Feedback Form";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Please submit your feedback below, and provide an email if you wish to be contacted.</p>
+
+<form action="/Home/FeedbackSubmitted">
+    <textarea id="feedback" name="feedback"></textarea><br><br>
+    <label for="email">Enter email: (optional)</label>
+    <input type="text" id="email" name="email"><br><br>
+    <input id="submit" type="submit" value="Submit">
+</form>

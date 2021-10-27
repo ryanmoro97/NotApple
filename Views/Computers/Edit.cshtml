@@ -1,0 +1,114 @@
+﻿@model part4.Models.Computer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Computer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cpu" class="control-label"></label>
+                <input asp-for="Cpu" class="form-control" />
+                <span asp-validation-for="Cpu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cpu2" class="control-label"></label>
+                <input asp-for="Cpu2" class="form-control" />
+                <span asp-validation-for="Cpu2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ram" class="control-label"></label>
+                <input asp-for="Ram" class="form-control" />
+                <span asp-validation-for="Ram" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ram2" class="control-label"></label>
+                <input asp-for="Ram2" class="form-control" />
+                <span asp-validation-for="Ram2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ram3" class="control-label"></label>
+                <input asp-for="Ram3" class="form-control" />
+                <span asp-validation-for="Ram3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Storage" class="control-label"></label>
+                <input asp-for="Storage" class="form-control" />
+                <span asp-validation-for="Storage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Storage2" class="control-label"></label>
+                <input asp-for="Storage2" class="form-control" />
+                <span asp-validation-for="Storage2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Storage3" class="control-label"></label>
+                <input asp-for="Storage3" class="form-control" />
+                <span asp-validation-for="Storage3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Display" class="control-label"></label>
+                <input asp-for="Display" class="form-control" />
+                <span asp-validation-for="Display" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Display2" class="control-label"></label>
+                <input asp-for="Display2" class="form-control" />
+                <span asp-validation-for="Display2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gpu" class="control-label"></label>
+                <input asp-for="Gpu" class="form-control" />
+                <span asp-validation-for="Gpu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gpu2" class="control-label"></label>
+                <input asp-for="Gpu2" class="form-control" />
+                <span asp-validation-for="Gpu2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OS" class="control-label"></label>
+                <input asp-for="OS" class="form-control" />
+                <span asp-validation-for="OS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OS2" class="control-label"></label>
+                <input asp-for="OS2" class="form-control" />
+                <span asp-validation-for="OS2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OS3" class="control-label"></label>
+                <input asp-for="OS3" class="form-control" />
+                <span asp-validation-for="OS3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Total" class="control-label"></label>
+                <input asp-for="Total" class="form-control" />
+                <span asp-validation-for="Total" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

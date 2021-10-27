@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Order Summary";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Thank you for your order.</p>
+
+<ul>
+    <li id="computer">
+        <h4>@ViewBag.name</h4>
+        <div class="details">
+            <span><u>CPU:</u> @ViewBag.name</span><br />
+            <span><u>RAM:</u> @ViewBag.ram</span><br />
+            <span><u>Storage:</u> @ViewBag.storage</span><br />
+            <span><u>Display:</u> @ViewBag.display</span><br />
+            <span><u>GPU:</u> @ViewBag.gpu</span><br />
+            <span><u>OS:</u> @ViewBag.os</span><br /><br />
+            <h4>Total: $@ViewBag.total</h4>
+        </div>
+    </li>
+</ul>

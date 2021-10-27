@@ -1,0 +1,64 @@
+﻿@model part4.Models.Computer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<script src="~/js/site.js"></script>
+
+<h1 id="computer">@Html.Raw(Model.Name)</h1>
+@using (Html.BeginForm("Purchased", "Home", FormMethod.Post))
+{
+<div id="computerCustomizer">
+    <hr /><br />
+    <span><u>CPU</u></span>
+    @Html.DropDownListFor(m => m.Cpu, new List<SelectListItem>
+                   { new SelectListItem{Text=Model.Cpu, Value=Model.Cpu+",0"},
+                     new SelectListItem{Text=Model.Cpu2, Value=Model.Cpu2+",500"}},
+                     new { @onchange = "updatePrice('cpu')" })
+    <br /><br />
+    <hr /><br />
+    <span><u>RAM</u></span>
+    @Html.DropDownListFor(m => m.Ram, new List<SelectListItem>
+                   { new SelectListItem{Text=Model.Ram, Value=Model.Ram+",0"},
+                     new SelectListItem{Text=Model.Ram2, Value=Model.Ram2+",250"},
+                     new SelectListItem{Text=Model.Ram3, Value=Model.Ram3+",500"}},
+                     new { @onchange = "updatePrice('ram')" })
+    <br /><br /><hr /><br />
+    <span><u>Storage</u></span>
+    @Html.DropDownListFor(m => m.Storage, new List<SelectListItem>
+                   { new SelectListItem{Text=Model.Storage, Value=Model.Storage+",0"},
+                     new SelectListItem{Text=Model.Storage2, Value=Model.Storage2+",250"},
+                     new SelectListItem{Text=Model.Storage3, Value=Model.Storage3+",500"}},
+                     new { @onchange = "updatePrice('storage')" })
+    <br /><br /><hr /><br />
+    <span><u>Display:</u> 2560x1600 Retina</span>
+    @Html.DropDownListFor(m => m.Display, new List<SelectListItem>
+                    {new SelectListItem{Text= Model.Display, Value = Model.Display + ",0" },
+                     new SelectListItem{Text= Model.Display2, Value = Model.Display2 + ",500"}},
+                     new { @onchange = "updatePrice('display')" })
+    <br /><br /><hr /><br />
+    <span><u>GPU</u></span>
+    @Html.DropDownListFor(m => m.Gpu, new List<SelectListItem>
+               { new SelectListItem{Text= Model.Gpu, Value = Model.Gpu + ",0"},
+                 new SelectListItem{Text= Model.Gpu2, Value = Model.Gpu2 + ",500"}},
+                 new { @onchange = "updatePrice('gpu')" })
+    <br /><br /><hr />
+    <br />
+    <span><u>OS</u></span>
+    @Html.DropDownListFor(m => m.OS, new List<SelectListItem>
+               { new SelectListItem{Text= Model.OS, Value = Model.OS },
+                 new SelectListItem{Text= Model.OS2, Value = Model.OS2},
+                 new SelectListItem{Text= Model.OS3, Value = Model.OS3}})
+    <br /><br /><hr />
+
+
+</div>
+
+    <h1 id="total">$@Html.Raw(Model.Total)</h1>
+    @Html.Hidden("Total", Model.Total);
+    @Html.Hidden("Name", Model.Name);
+
+    <input id="submit" type="submit" value="Buy">
+
+}
